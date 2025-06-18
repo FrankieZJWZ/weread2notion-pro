@@ -32,7 +32,7 @@ jobs:
           pip install -r requirements.txt
       - name: weread sync
         run: |
-          python scripts/weread.py
+          python weread2notionpro/weread.py
       - name: push
         run: |
           git config --local user.email "action@github.com"
